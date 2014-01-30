@@ -4,7 +4,7 @@ doc
 `doc` is a simple yet powerful CLI for quickly jumping to the documentation
 Web pages for various programming languages via your favorite browser.
 
-Examples:
+To install, `go get github.com/aclissold/doc`. Then, simply:
 * `doc golang fmt`
 * `doc go net/http`
 * `doc python math`
