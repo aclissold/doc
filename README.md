@@ -10,4 +10,5 @@ Examples:
 * `doc python math`
 * `doc py pickle`
 * `doc java java.lang.String` (fully-qualified class name required)
+* `doc spring org.springframework.core.Constants`
 * `doc anything-else Google search terms`

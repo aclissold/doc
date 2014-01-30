@@ -15,7 +15,7 @@ func main() {
 // parse translates command-line arguments to a destination and parameters
 func parse() (string, string) {
 	if len(os.Args) < 3 {
-		fmt.Fprintln(os.Stderr, "usage: doc (go|py) (pkg|module)")
+		fmt.Fprintln(os.Stderr, "usage: doc (go|py|java|spring) (pkg|module|class)")
 		os.Exit(1)
 	}
 
@@ -31,6 +31,9 @@ func combine(lang, args string) string {
 		return "http://docs.python.org/3/library/" + args
 	case "java":
 		return "http://docs.oracle.com/javase/7/docs/api/" +
+			strings.Replace(args, ".", "/", -1) + ".html"
+	case "spring":
+		return "http://docs.spring.io/spring/docs/3.2.x/javadoc-api/" +
 			strings.Replace(args, ".", "/", -1) + ".html"
 	default:
 		// Google it instead
