@@ -29,6 +29,9 @@ func combine(lang, args string) string {
 		return "http://golang.org/pkg/" + args + "/"
 	case "py", "python":
 		return "http://docs.python.org/3/library/" + args
+	case "java":
+		return "http://docs.oracle.com/javase/7/docs/api/" +
+			strings.Replace(args, ".", "/", -1) + ".html"
 	default:
 		// Google it instead
 		return "https://www.google.com/search?q=" + args
