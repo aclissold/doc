@@ -37,7 +37,7 @@ func combine(lang, args string) string {
 			strings.Replace(args, ".", "/", -1) + ".html"
 	default:
 		// Google it instead
-		return "https://www.google.com/search?q=" + args
+		return "https://www.google.com/search?q=" + lang + " " + args
 	}
 }
 
