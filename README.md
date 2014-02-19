@@ -11,4 +11,4 @@ To install, `go get github.com/aclissold/doc`. Then, simply:
 * `doc py pickle`
 * `doc java java.lang.String` (fully-qualified class name required)
 * `doc spring org.springframework.core.Constants`
-* `doc anything-else Google search terms`
+* `doc anything else to Google it instead`
