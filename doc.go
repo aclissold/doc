@@ -33,7 +33,7 @@ func combine(lang, args string) string {
 		return "http://docs.oracle.com/javase/7/docs/api/" +
 			strings.Replace(args, ".", "/", -1) + ".html"
 	case "spring":
-		return "http://docs.spring.io/spring/docs/3.2.x/javadoc-api/" +
+		return "http://docs.spring.io/spring/docs/3.2.x/javadoc-api/org/springframework" +
 			strings.Replace(args, ".", "/", -1) + ".html"
 	default:
 		// Google it instead
