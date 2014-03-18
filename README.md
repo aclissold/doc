@@ -10,5 +10,5 @@ To install, `go get github.com/aclissold/doc`. Then, simply:
 * `doc python math`
 * `doc py pickle`
 * `doc java java.lang.String` (fully-qualified class name required)
-* `doc spring org.springframework.core.Constants`
+* `doc spring core.Constants`
 * `doc anything else to Google it instead`
